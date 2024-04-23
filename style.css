@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 58px 0;
+    gap: 14px;
+    background-color: black;
+    width: 100%;
+}
+header h1{
+    color: white;
+    font-size: 40px;
+}
+main{
+    background-color: black;
+    height: 360px;
+    color: white;
+}
+header #logo{
+    height: 60px; 
+    filter: invert(100%) sepia(53%) saturate(0%) hue-rotate(166deg) brightness(117%) contrast(101%);
+}
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+}
+main .container img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* box-shadow: 1px 2px 5px black; */
+}
+
+/* Face-left */
+
+.container .face-left{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    left: -15px;
+}
+.face-left .move-up{
+    margin-top: -40px;
+}
+.face-left .grp-face{
+    display: flex;
+    flex-direction: column;
+}
+.face-left .grp-face #gap{
+    margin-top: 23px;
+}
+
+/* Face-right */
+
+.container .face-right{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    right: -15px;
+}
+.face-right .move-down{
+    margin-top: 40px;
+}
+.face-right .grp-face{
+    display: flex;
+    flex-direction: column;
+}
+.face-right .grp-face #gap{
+    margin-top: 23px;
+}
+.container .main-info{
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+
+/* Main-info */
+
+.main-info h2{
+    font-size: 42px;
+    line-height: 45px;
+    letter-spacing: 2.3px;
+    font-weight: 800;
+}
+.main-info p{
+    margin: 30px 0;
+    opacity: 0.8
+}
+.main-info .btn button{
+    margin: 0 8px;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn #down{
+    background-color: #00b9b6;
+    transition: 0.2s ease;
+}
+/* .btn #down span{
+    color: #00ffd5;
+} */
+.btn #question{
+    background-color: #6500d1d1;
+    transition: 0.2s ease;
+}
+.main-info .btn #down:hover {
+    background-color: white;
+    color: black;
+}
+
+.main-info .btn #question:hover{
+    background-color: white;
+    color: black;
+}
+/* Section */
+
+section{
+    text-align: center;
+}
+section .images img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+section p{
+    margin: 100px 0 60px 0;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: #AFAFAF;
+    font-size: 16px;
+    font-weight: 500;
+}
+section .images img{
+   margin: 0 10px;
+   border-radius: 7px;
+}
+article{
+    text-align: center;  
+}
+article h1{
+    color: #00adaab7;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+article h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+article p{
+    line-height: 22px;
+    font-family: 800;
+    color: rgb(113, 113, 113);
+}
+footer{
+    margin-top: 150px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+
+
+footer > p{
+    position: relative;
+    top: -30px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid rgb(192, 192, 192);
+    color: #898989;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .contain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    color: white;
+}
+footer .contain h1{
+    font-size: 40px;
+}
+footer .contain p{
+    font-size: 18px;
+    line-height: 23px;
+}
+footer .contain button{
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6500d1ae;
+    transition: 0.2s ease;
+}
+footer .contain button:hover{
+   color: black;
+   background-color: white;
+   box-shadow: 1px 1px 4px black;
+}
